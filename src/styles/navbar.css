@@ -1,7 +1,7 @@
 .navbar-container {
   display: flex;
   background-color: #ffffff;
-  padding: 30px;
+  padding: 15px;
   justify-content: flex-start;
   position: fixed;
   width: 100%;
@@ -71,5 +71,29 @@
 
 #navbar-list-item a {
   color: #c9c7c7;
+  font-size: 15px;
   font-weight: 300;
+}
+
+@media (max-width: 860px) {
+  .navbar-container {
+    padding: 15px;
+  }
+
+  .navbar-list-container {
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 430px) {
+  .navbar-list-container {
+    max-width: 100%;
+  }
+
+  #navbar-list-item a {
+    font-size: 14px;
+    color: #a19f9f;
+  }
 }

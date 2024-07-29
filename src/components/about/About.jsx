@@ -14,7 +14,7 @@ function About() {
     aTag.remove();
   };
   return (
-    <div className="about-container">
+    <div id="home" className="about-container">
       <div className="about-left-container">
         <>
           <p id="greeting-text">Hola, soy</p>
@@ -23,7 +23,7 @@ function About() {
             Psicóloga | Especialista en Gerencia del Talento Humano.
           </p>
         </>
-        <div className="about-buttons-container">
+        <div id="about" className="about-buttons-container">
           <button
             onClick={() => downloadFile(PDF_FILE_URL)}
             id="about-download-button"
@@ -31,7 +31,6 @@ function About() {
             Descargar CV 📥
           </button>
           <a
-            id="about-linkeIn-button"
             href="https://www.linkedin.com/in/paula-andrea-naranjo-mu%C3%B1oz-718290211/"
             target="_blank"
           >

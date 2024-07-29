@@ -6,7 +6,7 @@ export const renderDetails = (details) => {
         <p id="item-company">{details.company}</p>
         <p id="item-collaborators">{details.collaborators} colaboradores</p>
       </div>
-      <img src={details.logo} alt="logo" id="item-logo" />
+      {/* <img src={details.logo} alt="logo" id="item-logo" /> */}
       <p id="item-date">{details.date}</p>
     </div>
   );

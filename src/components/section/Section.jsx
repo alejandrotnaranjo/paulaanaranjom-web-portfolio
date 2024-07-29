@@ -26,7 +26,9 @@ function Section() {
     <div className="section-container">
       <div className="section-list-titles-container">
         <p id="section-list-title">Experiencia laboral</p>
-        <p id="section-list-title">Educación</p>
+        <p className="class1" id="section-list-title">
+          Educación
+        </p>
       </div>
       <div className="section-list-divisor">
         <div className="left-division">
@@ -45,6 +47,9 @@ function Section() {
         </div>
         <div className="right-division">
           <ul className="section-list-container">
+            <p id="section-list-title" className="hidden">
+              Educación
+            </p>
             {EDUCATION.map((item) => (
               <li id="section-list-item" key={item.id}>
                 <p id="item-job">{item.details.title}</p>
