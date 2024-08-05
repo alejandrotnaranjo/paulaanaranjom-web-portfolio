@@ -3,7 +3,8 @@ import LinkedInLogo from "../../assets/linkedin-logo.png";
 import "../../styles/about.css";
 
 function About() {
-  const PDF_FILE_URL = "http://localhost:5173/CV - Paula A. Naranjo.pdf";
+  const PDF_FILE_URL =
+    "https://paulaanaranjom-portfolio.web.app/CV-PaulaA.Naranjo.pdf";
   const downloadFile = (url) => {
     const aTag = document.createElement("a");
     const fileName = url.split("/").pop();
